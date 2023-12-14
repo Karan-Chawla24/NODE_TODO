@@ -7,7 +7,6 @@ import {
   logout,
 } from "../controllers/user.js";
 import { isAuthenticated } from "../middlewares/auth.js";
-import { deleteTask, updateTask } from "../controllers/task.js";
 
 const router = express.Router();
 
