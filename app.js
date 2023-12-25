@@ -11,10 +11,10 @@ export const app = express();
 config({
   path: "./data/config.env",
 });
-app.use((req, res, next) => {
-  res.setHeader("Cache-Control", "no-store");
-  next();
-});
+// app.use((req, res, next) => {
+//   res.setHeader("Cache-Control", "no-store");
+//   next();
+// });
 app.use(express.json());
 app.use(cookieParser());
 app.use(
